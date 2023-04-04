@@ -1,0 +1,22 @@
+﻿  Button3.cpp
+  CollisionManager.cpp
+  DebugManager.cpp
+  Engine.cpp
+  EventManager.cpp
+  GameObject.cpp
+  Main.cpp
+  MathManager.cpp
+  PlatformPlayer.cpp
+  Primitives.cpp
+  RenderManager.cpp
+  SoundManager.cpp
+  StateManager.cpp
+  States.cpp
+  TextureManager.cpp
+  TiledLevel.cpp
+C:\Users\DAC\source\repos\GAME-FUND---1017---LABS\GAME1017_LE4_AliAssad\GAME1017_Framework\TiledLevel.cpp(37,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\DAC\source\repos\GAME-FUND---1017---LABS\GAME1017_LE4_AliAssad\GAME1017_Framework\TiledLevel.cpp(40,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\DAC\source\repos\GAME-FUND---1017---LABS\GAME1017_LE4_AliAssad\GAME1017_Framework\TiledLevel.cpp(69,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\DAC\source\repos\GAME-FUND---1017---LABS\GAME1017_LE4_AliAssad\GAME1017_Framework\TiledLevel.cpp(71,30): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  GAME1017_Framework.vcxproj -> C:\Users\DAC\source\repos\GAME-FUND---1017---LABS\GAME1017_LE4_AliAssad\Bin\GAME1017_Framework.exe
