@@ -5,6 +5,7 @@
 Obstacle::Obstacle(const SDL_FRect dst, bool sprite, const SDL_Rect src, const char* key)
 	:m_hasSprite(sprite), m_pSprite(nullptr)
 {
+	typeObs = rand() % 3;
 	m_pos = { dst.x, dst.y };
 
 	if (m_hasSprite)
@@ -36,14 +37,20 @@ void Obstacle::Render()
 	SDL_FRect m_dst = { m_pos.x, m_pos.y, 128.0f, 128.0f }; 
 	if (m_hasSprite)
 	{
-		SDL_RenderCopyF(REMA::GetRenderer(), TEMA::GetTexture("spike"), NULL, &m_dst);
-		if (m_hasSprite = "spike")
+		// To spawn other obstacles
+		if (typeObs == 1)
 		{
-			m_hasSprite = "saw";
 			SDL_RenderCopyF(REMA::GetRenderer(), TEMA::GetTexture("saw"), NULL, &m_dst);
-			SDL_RenderCopyF(REMA::GetRenderer(), TEMA::GetTexture("fire"), NULL, &m_dst);
-			
 		}
+		else if (typeObs == 2)
+		{
+			SDL_RenderCopyF(REMA::GetRenderer(), TEMA::GetTexture("fire"), NULL, &m_dst);
+		}
+		else
+		{
+			SDL_RenderCopyF(REMA::GetRenderer(), TEMA::GetTexture("spike"), NULL, &m_dst);
+		}
+		
 	}
 	// Render outline just for Week 9 Lab.
 	SDL_SetRenderDrawColor(REMA::GetRenderer(), 0, 128, 128, 255);

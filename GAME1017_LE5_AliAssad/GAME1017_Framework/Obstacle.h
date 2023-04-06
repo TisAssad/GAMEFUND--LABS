@@ -13,6 +13,7 @@ public:
 	void Render();
 	const SDL_FPoint GetPos() { return m_pos; }
 private:
+	int typeObs;
 	bool m_hasSprite;
 	Image* m_pSprite; 
 	SDL_FPoint m_pos; 
